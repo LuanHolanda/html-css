@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem flexivel</title>
+</head>
+<body>
+    <h1>Imagem flexivel</h1>
+    <p>Você está vendo a imagem completa? Experimente ampliar ou diminuir o tamanho da sua janela para ter uma experiência melhor&reg;.</p>
+    <picture>
+        <source media="(max-width: 500px)" srcset="imagens/img-250.png" type="image/png">
+        <source media="(max-width: 600px)" srcset="imagens/img-550.png" type="image/png">
+        <source media="(max-width: 900px)" srcset="imagens/img-850.png" type="image/png">
+        <source media="(max-width:1200px)" srcset="imagens/img-1150.png" type="image/png">
+        <img src="imagens/img-1650.png" alt="img-1650">
+    </picture>
+</body>
+</html>

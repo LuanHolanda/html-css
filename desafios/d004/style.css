@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+}
+
+body{
+    text-align: justify;
+}
+
+ul{
+    list-style-type: '\2714\0020';
+    list-style-position: inside;
+    text-align: center;
+}

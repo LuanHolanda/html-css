@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        div > p{
+            display: none;
+        }
+        div:hover > h2{
+            color: aqua;
+        }
+        div:hover > p{
+            display: block;
+            color: red;
+        }
+        p{
+            display: none;
+        }
+        teste:hover h1{
+            display: block;
+            color: pink;
+        }
+        div > ul{
+            display: none;
+        }
+        div:hover ul{
+            display: block;
+            color: blue;
+        }
+
+        ul{
+            list-style: none;
+            border: 1px solid black;
+            border-radius: 10px;
+            border-spacing: 10px;
+            padding: -10px 10px 10px 10px;}
+        div > ul > li{
+            display: inline;
+        }    
+
+       
+    </style>
+</head>
+<body>
+    <div class="teste">
+        <h1>Meu Exemplo</h1>
+        <p>Passe o mouse sobre o título a seguir</p>
+    </div>
+    <div>
+        <h2>Minha lista</h2>
+        <ul>
+            <li><a href="#">Cursos</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Seja um apoiador</a></li>
+            <li><a href="#">Validação de Certificado</a></li>
+            <li><a href="#">Hall da Fama</a></li>
+            <li><a href="">Meu Painel</a></li>
+    </div>
+</body>
+</html>

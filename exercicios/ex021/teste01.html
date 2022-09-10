@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #menu{
+            list-style: none;
+            padding: 0;
+            background-color: rgb(37, 37, 39);
+        }
+        #menu li{
+            display: inline;
+        }
+        #menu li a{
+            text-decoration: none;
+            padding: 20px;
+            display: inline-block;
+            color: #fff;
+            transition: background .5s;
+        }
+        #menu li a:hover{
+            background-color: rgba(24, 139, 223);
+        }
+    </style>
+</head>
+<body>
+    <header>    
+        <nav id="menu">
+            <h1>Exemplo de caixa box-level</h1>
+            <ul>
+                <li><a href="">Meu Painel</a></li>
+                <li><a href="">Hall da Fama</a></li>
+                <li><a href="">Validação de Certificado</a></li>
+                <li><a href="">Seja um apoiador</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Cursos</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Links e Âncoras</h1>
+    <p><a target="blank" rel="exernal" href="https://web.dev/howbrowserswork/">Links</a> são uma parte muito importante na construção de um site.</p>
+    <p>Para poder controlar onde o site de destino vai abrir, podemos usar o atributo <em>target</em>, que suporta os seguintes valores:</p>
+    <ul>
+        <li><a target="_blank" rel="external" href="https://web.dev/howbrowserswork/">_blank</a> vai abrir o link em ma nova janela em branco</li>
+        <li><a target="_self" href="https://web.dev/howbrowserswork/">_self</a> vai abrir o link na janela ou frame atual</li>
+        <li>Existe também _top e _parent que se baseia em frames e é menos usada</li>
+    </ul>
+    <h2>Esse link é seu ou dos outros?</h2>
+    <p>Existe um recurso que indica qual a natureza do destino usando o atributo <em>rel</em>, que aceita os seguintes valores:</p>
+    <ul>
+        <li><a target="_blank" rel="next" href="https://web.dev/howbrowserswork/"><em>next</em></a> indica que o link é para a próxima parte do documento atual</li>
+        <li><a target="_parent" rel="prev" href="https://web.dev/howbrowserswork/"><em>prev</em></a> indica que o link é para a parte anterior do documento atual</li>
+        <li><a title="PAI É BRABO" target="_top" rel="author" href="https://web.dev/howbrowserswork/"><em>author</em></a> indica que é um link para o site do autor do artigo atual</li>
+        <li><a target="_self" rel="external" href="https://web.dev/howbrowserswork/"><em>external</em></a> indica que é um link para outro site que não faz parte do site</li>
+    </ul>
+
+    <p>Se quiser acessar minha segunda página clique <a rel="next" target="_self" href="pag002.html"><em>aqui</em></a></p>
+    <h1>Links para download</h1>
+    <ul>
+        <li><a target="_blank" href="livro/Certificado Lógica de programação.pdf" download="Certificado Lógica de programação.pdf" type="application/pdf">Baixar o certificado em PDF</a></li>
+        <li><a href="livro/Certificado Lógica de programação.zip" download="Certificado Lógica de programação.zip" type="application/zip">Baixar o certificado compactado em zip</a></li>
+    </ul>
+
+    <p style="margin-left: 150px;"><span title="Espanhol"><a lang="es" href="qa-html-language-declarations.es">Español</a></span></p>
+</body>
+</html>
